@@ -6,12 +6,19 @@
 
 using namespace std;
  int main(){
-    double money;
+    double money, pounds, marks, franks, yens;
+    
     cin >> money;
+
+    pounds = money / POUND;
+    franks = money / FRANK;
+    marks = money / MARK;
+    yens = money / YEN;
+
     cout << money << "$ is:\n"
-    << money / POUND << " pounds\n"
-    << money / FRANK<< " franks\n"
-    << money / MARK << " marks\n"
-    << money / YEN << " yens\n";
+    << pounds << " pounds\n"
+    << franks / FRANK<< " franks\n"
+    << marks / MARK << " marks\n"
+    << yens << " yens\n";
     return 0;
  }
